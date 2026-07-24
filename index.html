@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Results - Y2B4 Minitest 2025/2026</title>
+    <title>Student Results - Y2B4 CAM 2025/2026</title>
     <style>
         body { font-family: sans-serif; display: flex; justify-content: center; padding-top: 50px; background-color: #f4f4f9; }
         .card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; width: 300px; }
@@ -19,7 +19,7 @@
     <div class="card">
         <img src="images.jpg" alt="Department Logo" class="logo">
         
-        <h2>Y2B4 Minitest Results</h2>
+        <h2>Y2B4 CAM Results</h2>
         <input type="password" id="pinInput" placeholder="Enter your secret PIN">
         <br>
         <button onclick="fetchResult()">Check</button>
@@ -49,7 +49,7 @@
                 if (data.found) {
                     resultDiv.innerHTML = `
                         <p><strong>Name:</strong> ${data.name}</p>
-                        <p><strong>Score:</strong> ${data.score} / 20</p>
+                        <p><strong>Score:</strong> ${data.score} / 30</p>
                     `;
                 } else {
                     resultDiv.innerHTML = `<p class='error'>${data.message}</p>`;
